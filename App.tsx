@@ -1,4 +1,3 @@
-
 import React from "react";
 import { HashRouter as Router, Routes, Route, Link, useLocation } from "react-router-dom";
 import { Icon } from "./components/UI";
@@ -10,11 +9,11 @@ import TransactionList from "./pages/TransactionList";
 import Reports from "./pages/Reports";
 import TransactionDetail from "./pages/TransactionDetail";
 import Settings from "./pages/Settings";
+import NewTransaction from "./pages/NewTransaction";
 
 // Temporary Placeholder Pages for completeness
 const Login = () => <div className="p-10 text-center"><h1>Login Page</h1><Link to="/dashboard" className="text-primary underline">Go to Dashboard</Link></div>;
 const Plans = () => <div className="p-10 text-center"><h1>Debt Plans</h1><p className="text-muted-foreground">Avalanche & Snowball strategies go here.</p></div>;
-const NewTransaction = () => <div className="p-10 text-center"><h1>Add Transaction</h1><Link to="/dashboard" className="text-primary underline">Cancel</Link></div>;
 
 function BottomNav() {
   const location = useLocation();
